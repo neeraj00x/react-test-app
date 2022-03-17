@@ -1,13 +1,98 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.UserPage {
+    position: relative;
+    width: 60%;
+    align-self: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    padding: 30px 90px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.UserPage:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#map{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-top-left-radius: 40px;
+    background-color: lightgray;
+}
+
+.mapLeftSpace{
+    background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+
+.leaflet-container {
+    height: 125px;
+    width: 80%;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.nameRow{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+}
+
+.name h2{
+    margin: 5px;
+}
+
+a{
+    margin: 7px;
+    text-decoration: none;
+    color: black;
+    font-size: small
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    align-items: center;
+}
+
+.img {
+    position: absolute;
+    top:155px;
+    left: 110px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    transform: translateY(-20px);
+}
+
+.title, .icon {
+    width: 20%;
+}
+.title, .data{
+    padding: 10px;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+}
+
+.data, .name {
+    width: 75%;
+}
+
+.button {
+    width: 55px;
+    height: 25px;
+    background-color: #120b24;
+    color: white;
+    border-radius: 5px;
+}
+.button:active{
+    transform: translate(20px,20px,0);
 }
