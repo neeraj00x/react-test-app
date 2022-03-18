@@ -15,12 +15,10 @@ function UserPage() {
         <div className="UserPage">
             {data &&
                 data.results.map((item) => (
-                    <Map item = {item}/>
-                ))
-            }
-            {data &&
-                data.results.map((item) => (
-                    <UserInfo item = {item}/>
+                    <div>
+                        <Map item = {item}/>
+                        <UserInfo item = {item}/>
+                    </div>
                 ))
             }
         </div>
